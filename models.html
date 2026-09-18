@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Models — Brandon Tu</title>
+<meta name="description" content="Quantitative models built for Canadian equity research: the problem each one solved, how it was approached, and what it showed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="index.html">Brandon&nbsp;Tu</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="philosophy.html">Philosophy</a>
+      <a href="process.html">Process</a>
+      <a href="models.html" aria-current="page">Models</a>
+      <a href="ai.html">AI</a>
+      <a href="personal.html">Personal</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero wrap">
+    <p class="eyebrow">Models</p>
+    <h1>Built to answer a question I couldn't answer by reading.</h1>
+    <p class="lede">I'm not a quant, and none of this runs the portfolio. The models exist because judgment has blind spots, and some of those blind spots are measurable.</p>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <span class="section-label">Why Build Anything</span>
+    </div>
+    <div class="prose">
+      <p>Every model here started the same way: a question that kept coming up in post-mortems, that I couldn't settle by thinking harder about it. Is this a pattern or a story? Does the thing I believe about this market actually show up in the data, or have I been rewarded for it by coincidence?</p>
+      <p>The useful output is rarely a signal. More often it's a <strong>correction to an intuition</strong> — finding out that an effect I was confident about was mostly sector composition, or that a screen I trusted stopped working in exactly the conditions where I most needed it.</p>
+      <p class="note"><strong>A note on detail.</strong> What follows is deliberately calibrated: enough to show the work was genuinely specified, built, and run, and not enough to reconstruct anything proprietary. Where a model was developed in a professional capacity, the description is confined to method and general findings — no employer attribution, no live results, no production parameters.</p>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <span class="section-label">Selected Work</span>
+    </div>
+
+    <!-- ===================================================================
+         MODEL TEMPLATE — this first entry is a worked example showing the
+         intended level of detail. Replace the content with real specifics;
+         keep the five-row structure, it's what makes these read as rigorous
+         rather than as claims.
+         =================================================================== -->
+
+    <article class="model">
+      <div class="model-head">
+        <h3><span class="tk">Sector-neutral quality screen for Canadian small- and mid-caps</span></h3>
+        <span class="tag"><span class="tk">In production</span></span>
+      </div>
+      <div class="model-rows">
+
+        <dl class="model-row">
+          <dt>The problem</dt>
+          <dd><span class="tk">Generic factor screens applied to the Canadian universe import enormous unintended sector bets. A naive value rank in this market is, most of the time, a levered bet on energy and materials — so the screen ends up expressing a commodity view I never intended to take, and its apparent efficacy is really just sector timing.</span></dd>
+        </dl>
+
+        <dl class="model-row">
+          <dt>Approach</dt>
+          <dd><span class="tk">Rank within sector rather than across the universe, on a composite of profitability stability, accrual quality, and reinvestment rate. Winsorise inputs to handle the fat tails that resource names produce. Apply a liquidity floor before ranking rather than after, so the output is an actionable list rather than a theoretical one.</span></dd>
+        </dl>
+
+        <dl class="model-row">
+          <dt>What it showed</dt>
+          <dd><span class="tk">Neutralising sector gave up a meaningful share of the raw spread — but the residual was far more stable across regimes, and the drawdown profile improved materially. Most of the headline performance of the un-neutralised version turned out to be one macro factor in disguise.</span></dd>
+        </dl>
+
+        <dl class="model-row">
+          <dt>Limitations</dt>
+          <dd><span class="tk">Thin coverage in the smallest decile makes the fundamental inputs unreliable, and the screen degrades in sharp regime shifts where trailing fundamentals lag the turn. It generates a reading list; it does not generate a position.</span></dd>
+        </dl>
+
+        <dl class="model-row">
+          <dt>Where it sits</dt>
+          <dd><span class="tk">Feeds stage two of the <a href="process.html">process</a> — idea generation only. No output of this model reaches the portfolio without the full primary research stage.</span></dd>
+        </dl>
+
+      </div>
+    </article>
+
+    <article class="model">
+      <div class="model-head">
+        <h3><span class="tk">[Model two — working title]</span></h3>
+        <span class="tag"><span class="tk">Research</span></span>
+      </div>
+      <div class="model-rows">
+        <dl class="model-row">
+          <dt>The problem</dt>
+          <dd><span class="tk">What question kept recurring that you couldn't settle by reading? State it as a problem, not as a solution.</span></dd>
+        </dl>
+        <dl class="model-row">
+          <dt>Approach</dt>
+          <dd><span class="tk">Universe, the core construction choice, and the one non-obvious design decision you made. Enough that a practitioner nods; not enough that they could rebuild it.</span></dd>
+        </dl>
+        <dl class="model-row">
+          <dt>What it showed</dt>
+          <dd><span class="tk">The finding — stated directionally, including anything that contradicted what you expected going in. Contradictions are the most credible thing on a page like this.</span></dd>
+        </dl>
+        <dl class="model-row">
+          <dt>Limitations</dt>
+          <dd><span class="tk">Where it breaks and what it cannot do.</span></dd>
+        </dl>
+        <dl class="model-row">
+          <dt>Where it sits</dt>
+          <dd><span class="tk">Which stage of the process it informs, and what it is explicitly not allowed to decide.</span></dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="model">
+      <div class="model-head">
+        <h3><span class="tk">[Model three — working title]</span></h3>
+        <span class="tag"><span class="tk">Retired</span></span>
+      </div>
+      <div class="model-rows">
+        <dl class="model-row">
+          <dt>The problem</dt>
+          <dd><span class="tk">Consider making one of these a model that failed or was retired. A manager who shows one that didn't work is far more believable than one who shows three that did.</span></dd>
+        </dl>
+        <dl class="model-row">
+          <dt>Approach</dt>
+          <dd><span class="tk">—</span></dd>
+        </dl>
+        <dl class="model-row">
+          <dt>What it showed</dt>
+          <dd><span class="tk">—</span></dd>
+        </dl>
+        <dl class="model-row">
+          <dt>Limitations</dt>
+          <dd><span class="tk">—</span></dd>
+        </dl>
+        <dl class="model-row">
+          <dt>Where it sits</dt>
+          <dd><span class="tk">—</span></dd>
+        </dl>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="section wrap">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <span class="section-label">Discipline</span>
+    </div>
+    <h2>How I try not to fool myself.</h2>
+    <div class="prose">
+      <p>The failure mode in this work isn't a bug. It's building something that describes the past beautifully and tells you nothing about the future, then trusting it because it was expensive to build.</p>
+    </div>
+
+    <ul class="plain-list" style="margin-top:2rem;">
+      <li>
+        <span class="term">Hypothesis first</span>
+        <span>The economic reason an effect should exist is written down before the data is touched. Anything discovered by searching gets treated as a hypothesis for future testing, not as a finding.</span>
+      </li>
+      <li>
+        <span class="term">Costs and constraints in from the start</span>
+        <span>Transaction costs, realistic liquidity, and borrow are modelled at the outset. In Canadian small caps this alone kills most apparently attractive results.</span>
+      </li>
+      <li>
+        <span class="term">Survivorship and point-in-time data</span>
+        <span>Delisted names included; fundamentals as they were reported at the time, not as later restated. The Canadian resource universe is unforgiving of shortcuts here.</span>
+      </li>
+      <li>
+        <span class="term">A small number of shots</span>
+        <span>Every additional specification tried makes any given result less meaningful. I track how many variants were run, because the count is part of the evidence.</span>
+      </li>
+      <li>
+        <span class="term">Nothing runs the book</span>
+        <span>Every model informs a decision. None of them makes one. That boundary is deliberate and I don't move it.</span>
+      </li>
+    </ul>
+  </section>
+
+  <div class="wrap next-up">
+    <a href="ai.html">
+      <span class="label">Next</span>
+      <span class="title">AI in Research →</span>
+    </a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-name">Brandon Tu</p>
+      <p class="footer-note">Institutional portfolio manager — Canadian equities.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="philosophy.html">Philosophy</a>
+      <a href="process.html">Process</a>
+      <a href="ai.html">AI</a>
+      <a href="personal.html">Personal</a>
+      <a href="mailto:iam@brandontu.com">Email</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="colophon">© 2026 Brandon Tu. Everything here is personal opinion, written in a personal capacity. It does not represent the views of my employer, and nothing on this site is investment advice, research, or an offer or solicitation of any kind. Descriptions of quantitative work are illustrative and exclude proprietary detail; no performance figures are presented.</p>
+  </div>
+</footer>
+
+</body>
+</html>

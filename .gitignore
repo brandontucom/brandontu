@@ -1,0 +1,16 @@
+# Secrets — never commit
+credentials.token
+*.token
+.env
+.env.*
+
+# Original full-resolution source photography (web copies live in img/)
+13384.jpg
+13386.jpg
+13390.jpg
+
+# OS / editor cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/

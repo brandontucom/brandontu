@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI in Research — Brandon Tu</title>
+<meta name="description" content="Where machine assistance genuinely changes investment research, where it quietly degrades it, and the guardrails in between.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="index.html">Brandon&nbsp;Tu</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="philosophy.html">Philosophy</a>
+      <a href="process.html">Process</a>
+      <a href="models.html">Models</a>
+      <a href="ai.html" aria-current="page">AI</a>
+      <a href="personal.html">Personal</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero wrap">
+    <p class="eyebrow">AI in Research</p>
+    <h1>A very fast analyst who is confidently wrong about numbers.</h1>
+    <p class="lede">Used carelessly, these tools produce consensus faster than you can think. Used well, they buy back the single scarcest input in this job — attention.</p>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <span class="section-label">The Position</span>
+    </div>
+    <div class="prose">
+      <p>There is a structural problem with using language models for investment research that I think gets discussed far too little.</p>
+      <p>These systems are trained on what has already been written. Asked what they think about a company, they return a well-organised distillation of the existing published view — which is to say, <strong>they are consensus machines.</strong> Consensus is precisely the thing an active manager is being paid to differ from. A tool that makes it faster and more fluent to arrive at the standard opinion is not obviously an advantage. In a market as thinly covered as Canada's, where the edge comes from doing work nobody else has done, it can be an active liability.</p>
+      <p>So I don't use them to form views. I use them to remove the mechanical work that stands between me and forming my own — and to attack the views once I have them.</p>
+    </div>
+
+    <p class="pull">The gain isn't better answers. It's reading everything instead of sampling it.</p>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <span class="section-label">Where It Earns Its Place</span>
+    </div>
+
+    <ol class="stages">
+
+      <li>
+        <div class="stage-key">
+          <span class="num">USE 01</span>
+          <h3>Reading the whole corpus, not a sample</h3>
+        </div>
+        <div class="stage-body">
+          <p>The honest constraint in fundamental research has always been that there are more filings, transcripts, and disclosures than any person can read. So you sample, and you hope the sample was representative.</p>
+          <p>Machine assistance changes the arithmetic. <strong>Every transcript for a whole sub-sector across forty quarters</strong> becomes tractable — not to summarise, but to locate the handful of passages worth reading closely myself. The model's job is retrieval and triage. The reading is still mine.</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="stage-key">
+          <span class="num">USE 02</span>
+          <h3>Tracking how language changes over time</h3>
+        </div>
+        <div class="stage-body">
+          <p>Management commentary drifts before the numbers do. A segment that was "a priority" becomes "an area we continue to evaluate." Hedging language appears around a contract that used to be described flatly. Across one company over twelve quarters, that drift is hard to see; across a sector, it is invisible without help.</p>
+          <p>This is the application where I think the technology is genuinely differentiating rather than merely convenient — <strong>it surfaces questions</strong>, which I then answer with primary work.</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="stage-key">
+          <span class="num">USE 03</span>
+          <h3>Structured extraction from unstructured disclosure</h3>
+        </div>
+        <div class="stage-body">
+          <p>Canadian disclosure is inconsistent in ways that make comparison genuinely laborious: segment definitions that shift, non-standard adjusted metrics, note structures that vary by issuer. Pulling a consistent series out of that has historically been a manual exercise, which is why it often doesn't get done.</p>
+          <p>Extraction is the one task where these models are both reliable and checkable — <strong>every extracted figure carries a citation back to the source document</strong>, and spot-checking against the filing is fast. Anything that can't be traced is discarded rather than trusted.</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="stage-key">
+          <span class="num">USE 04</span>
+          <h3>Arguing against me, on demand</h3>
+        </div>
+        <div class="stage-body">
+          <p>The highest-value use I've found, and the one that plays directly to what these systems actually are. Because they encode consensus, they are excellent at reconstructing the view I am betting against.</p>
+          <p>I hand over a completed thesis and ask for the strongest possible case that it's wrong, the base rates that argue against it, and what a sceptical analyst would attack first. It is a <strong>tireless, unoffendable counterparty</strong> — and unlike a colleague, I can ask it to do this eleven times without social cost. Several positions have been resized, and a few abandoned, off the back of this step.</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="stage-key">
+          <span class="num">USE 05</span>
+          <h3>Compressing the build time on quantitative work</h3>
+        </div>
+        <div class="stage-body">
+          <p>The distance between "I wonder whether X holds in this market" and a defensible test of X used to be measured in days, which meant most such questions never got asked. That distance is now short enough that the marginal question gets tested.</p>
+          <p>The risk is obvious and worth naming: when testing becomes cheap, <strong>the multiple-comparisons problem gets much worse.</strong> More shots on goal means more spurious results that look real. The discipline described under <a href="models.html">Models</a> — hypothesis stated first, specification count tracked — matters more now than it did when the friction did that policing for me.</p>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <span class="section-label">Limits</span>
+    </div>
+    <h2>Where I don't let it near the work.</h2>
+    <div class="prose">
+      <p>Knowing the failure modes precisely is the whole of the skill. These are the ones I treat as hard boundaries.</p>
+    </div>
+
+    <ul class="plain-list" style="margin-top:2rem;">
+      <li>
+        <span class="term">Any unsourced number</span>
+        <span>These systems produce plausible figures with complete confidence and no signal that they were invented. A number without a traceable citation to a primary document does not enter a model, a note, or a conversation. This rule has no exceptions.</span>
+      </li>
+      <li>
+        <span class="term">Valuation judgment</span>
+        <span>Deciding what a business is worth requires weighing things that aren't in the training data — the quality of a management team you've met, the durability of an advantage that hasn't been tested yet. Fluent output about valuation is the most dangerous kind, because it reads exactly like insight.</span>
+      </li>
+      <li>
+        <span class="term">Genuinely novel situations</span>
+        <span>The cases where the analysis is most valuable are the ones with the least precedent, which is precisely where a model trained on precedent is weakest — and where it will be most confidently generic.</span>
+      </li>
+      <li>
+        <span class="term">Anything touching material non-public information</span>
+        <span>Confidential and non-public material does not go into third-party systems. This is a compliance obligation before it is a preference, and it constrains the tooling choices rather than the other way around.</span>
+      </li>
+      <li>
+        <span class="term">Backtests where the model knows the future</span>
+        <span>A system trained through a given date has, in effect, read the outcome. Asking it to reason about a historical period is a lookahead-bias generator wearing a helpful interface.</span>
+      </li>
+      <li>
+        <span class="term">The final step before a decision</span>
+        <span>Machine output is never the last thing I look at. If it would be, the work isn't finished.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <span class="section-label">Direction</span>
+    </div>
+    <h2>Where I think this goes.</h2>
+    <div class="prose">
+      <p>My working assumption is that the advantage does not accrue to whoever adopts the tools — that will be everyone, quickly — but to whoever is clearest about which parts of the job were never the bottleneck.</p>
+      <p>Reading was a bottleneck. Extraction was a bottleneck. Building a test was a bottleneck. <strong>Judgment was not</strong>, and removing friction around judgment mostly produces faster bad decisions. The managers who do well with this are likely to be the ones who use it to widen the funnel at the top and leave the narrow end alone.</p>
+      <p class="note">I'm genuinely interested in how other practitioners are drawing these lines, and I'd welcome the argument if you draw them somewhere else. <a href="mailto:iam@brandontu.com">iam@brandontu.com</a>.</p>
+    </div>
+  </section>
+
+  <div class="wrap next-up">
+    <a href="personal.html">
+      <span class="label">Next</span>
+      <span class="title">Personal →</span>
+    </a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-name">Brandon Tu</p>
+      <p class="footer-note">Institutional portfolio manager — Canadian equities.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="philosophy.html">Philosophy</a>
+      <a href="process.html">Process</a>
+      <a href="models.html">Models</a>
+      <a href="personal.html">Personal</a>
+      <a href="mailto:iam@brandontu.com">Email</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="colophon">© 2026 Brandon Tu. Everything here is personal opinion, written in a personal capacity. It does not represent the views of my employer, and nothing on this site is investment advice, research, or an offer or solicitation of any kind.</p>
+  </div>
+</footer>
+
+</body>
+</html>
