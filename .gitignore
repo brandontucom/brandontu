@@ -4,6 +4,12 @@ credentials.token
 .env
 .env.*
 
+# Private source material. The resume informs the site's copy but is
+# deliberately never published — see the brief.
+Resume/
+*.docx
+*.pdf
+
 # Original full-resolution source photography (web copies live in img/)
 13384.jpg
 13386.jpg
