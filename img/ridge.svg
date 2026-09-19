@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Layered mountain ridgelines">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0C2237"/>
+      <stop offset="45%"  stop-color="#13344F"/>
+      <stop offset="100%" stop-color="#27587D"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.16"/>
+    </linearGradient>
+    <linearGradient id="r1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A7DA4"/>
+      <stop offset="100%" stop-color="#37658A"/>
+    </linearGradient>
+    <linearGradient id="r2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2F5A80"/>
+      <stop offset="100%" stop-color="#244A6C"/>
+    </linearGradient>
+    <linearGradient id="r3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1D3F5E"/>
+      <stop offset="100%" stop-color="#173349"/>
+    </linearGradient>
+    <linearGradient id="r4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#112A3F"/>
+      <stop offset="100%" stop-color="#0C1F2F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="700" fill="url(#sky)"/>
+
+  <!-- far ridge -->
+  <path fill="url(#r1)" d="M0,432 L118,330 L198,382 L300,278 L402,352 L500,300 L618,392 L700,338 L818,402 L900,358 L1020,298 L1122,372 L1220,318 L1338,392 L1452,340 L1600,402 L1600,700 L0,700 Z"/>
+  <rect x="0" y="392" width="1600" height="120" fill="url(#mist)"/>
+
+  <!-- second ridge -->
+  <path fill="url(#r2)" d="M0,476 L102,422 L222,474 L322,402 L442,462 L562,412 L662,472 L782,430 L900,482 L1002,440 L1142,492 L1262,442 L1382,492 L1500,452 L1600,484 L1600,700 L0,700 Z"/>
+  <rect x="0" y="446" width="1600" height="120" fill="url(#mist)"/>
+
+  <!-- third ridge -->
+  <path fill="url(#r3)" d="M0,546 L142,502 L262,552 L382,506 L522,562 L642,520 L762,572 L882,530 L1002,578 L1142,536 L1282,582 L1422,540 L1600,572 L1600,700 L0,700 Z"/>
+  <rect x="0" y="520" width="1600" height="110" fill="url(#mist)"/>
+
+  <!-- near ridge -->
+  <path fill="url(#r4)" d="M0,622 L162,596 L302,632 L462,600 L602,642 L762,610 L902,646 L1062,616 L1202,652 L1362,620 L1600,646 L1600,700 L0,700 Z"/>
+</svg>
